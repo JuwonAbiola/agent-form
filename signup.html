@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Agent Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootStrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js?render=6LcZzoIUAAAAAAVC4xio4_VYiCdAAzQ2oH3TQGRm'></script>
+
+
+</head>
+<br />
+
+<!-- Just an image -->
+<nav class="navbar navbar-light ">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/logo.png" alt="">
+  </a>
+</nav>
+
+<body>
+  <br />
+  <center style="font-size:22px">
+    Kindly Fill This Form And One Of Our Representatives Will Contact You
+  </center>
+  <br />
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="box-panel">
+
+        <form action="/" method="post">
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label style="font-size:20px" for="firstName">Full Name</label>
+              <input type="text" class="form-control" id="Name" name="name" placeholder="Please Enter Your Full Name"
+                onkeypress="return /[a-z]/i.test(event.key)" required>
+            </div>
+            <div class="form-group col-md-5">
+              <label style="font-size:20px" for=" gender">Gender</label>
+              <select id="gender" class="form-control" name="gender" required>
+                <option value="" disabled selected>Please Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label style="font-size:20px" for="inputAddress">Email Address</label>
+              <input type="email" class="form-control" id="E-mail" name="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group col-md-5">
+              <label style="font-size:20px" for="Phone">Phone Number</label>
+              <input type="tel" class="form-control" name="phone" id="Phone" placeholder="Enter your Phone Number"
+                maxlength="14" onkeypress="return /[0-9+]/i.test(event.key)" required>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="form-row">
+            <div class="form-group col-md-12" style="width:100%">
+              <label style="font-size:20px" for="inputAddress">Business Address</label>
+              <input type="text" class="form-control" name="address" id="address" placeholder="Enter Address">
+            </div>
+          </div>
+          <br />
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label style="font-size:20px" for="inputState">State</label>
+              <select id="inputState" class="form-control" name="state" onchange="localGovChange(this);" required>
+                <option value="" disabled selected>Please Select a State</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Bayelsa">Bayelsa</option>
+                <option value="Benue">Benue</option>
+                <option value="Borno">Borno</option>
+                <option value="CrossRiver">Cross River</option>
+                <option value="Delta">Delta</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Edo">Edo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Imo">Imo</option>
+                <option value="Jigawa">Jigawa</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Katsina">Katsina</option>
+                <option value="Kebbi">Kebbi</option>
+                <option value="Kogi">Kogi</option>
+                <option value="Kwara">Kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Nasarawa">Nasarawa</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Rivers">Rivers</option>
+                <option value="Sokoto">Sokoto</option>
+                <option value="Taraba">Taraba</option>
+                <option value="Yobe">Yobe</option>
+                <option value="Zamfara">Zamfara</option>
+                <option value="Abuja">Abuja</option>
+              </select>
+            </div>
+            <div class="form-group col-md-5">
+
+              <label style="font-size:20px" for="localGovt">Local Govt </label>
+              <select id="country" name="lgov" class="form-control" required>
+                <option value="" disabled selected>Please Select Your Local Government</option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label style="font-size:20px" for="agency">Are you currently into Agency Banking ?</label>
+              <select id="res" class="form-control" name="agency" onchange="resChange(this);" required>
+                <option value="" disabled selected>Please select an option </option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+
+              </select>
+            </div>
+            <div class="form-group col-md-5">
+
+              <label style="font-size:20px" for="platforms">Which of these platforms do you use ? </label>
+              <select id="rest" name="platform" class="form-control">
+                <option value="" disabled selected></option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label style="font-size:20px" for="gender">How did you hear about us?</label>
+              <select name="advert" id="advert" name="advert" class="form-control" onchange="showfield(this.options[this.selectedIndex].value)">
+                <option value="" disabled selected>Please Select Source</option>
+                <option value="Referral">Referral</option>
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Newspaper">Instagram</option>
+                <option value="YouTube ">YouTube</option>
+                <option value="Radio">Radio</option>
+                <option value="Other">Other Sources</option>
+              </select>
+            </div>
+            <div id="div1" class="form-group col-md-5" style="font-size:20px">
+            </div>
+          </div>
+          <br />
+          <center><button type="submit" class="but">SUBMIT</button></center>
+          <br />
+      </div>
+    </div>
+    </form>
+  </div>
+  <br />
+  <br />
+
+  </div>
+
+</body>
+
+</html>

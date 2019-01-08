@@ -1,0 +1,78 @@
+.box-panel {
+    padding: 10px 60px;
+    margin-bottom: 16px;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.12);
+    background: white;
+    align-self: auto;
+    padding: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    padding-right: 70px;
+    padding-left: 70px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container-fluid {
+    background-image: url(../assets/Group273.svg);
+    background-size: cover;
+    width: 100%;
+}
+
+.but {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40%;
+    background-color: #007bff;
+    font-size: 110%;
+}
+
+.form-group {
+    margin-bottom: 190px;
+}
+
+@media only screen and (max-width: 991px) {
+    .box-panel {
+        padding: 5px 5px;
+        margin-bottom: 16px;
+        box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.12);
+        background: white;
+        align-self: auto;
+        padding: auto;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 10px;
+    }
+
+    .but {
+        border: none;
+        color: white;
+        padding: auto;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: auto;
+        cursor: pointer;
+        width: 120px;
+        height: 20%;
+        background-color: #007bff;
+        font-size: 110%;
+    }
+
+}
