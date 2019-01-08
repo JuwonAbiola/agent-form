@@ -25,10 +25,7 @@
 
 <body>
   <br />
-  <center style="font-size:22px">
-    Kindly Fill This Form And One Of Our Representatives Will Contact You
-  </center>
-  <br />
+  <div class="cen">Kindly Fill This Form And One Of Our Representatives Will Contact You </div> <br />
 
   <div class="container-fluid">
     <div class="container">
@@ -37,14 +34,14 @@
         <form action="/" method="post">
           <div class="form-row">
             <div class="form-group col-md-5 mr-auto">
-              <label style="font-size:20px" for="firstName">Full Name</label>
+              <label for="firstName">Full Name</label>
               <input type="text" class="form-control" id="Name" name="name" placeholder="Please Enter Your Full Name"
                 onkeypress="return /[a-z]/i.test(event.key)" required>
             </div>
             <br />
 
             <div class="form-group col-md-5">
-              <label style="font-size:20px" for=" gender">Gender</label>
+              <label for=" gender">Gender</label>
               <select id="gender" class="form-control" name="gender" required>
                 <option value="" disabled selected>Please Select Your Gender</option>
                 <option value="Male">Male</option>
@@ -56,13 +53,13 @@
 
           <div class="form-row">
             <div class="form-group col-md-5 mr-auto">
-              <label style="font-size:20px" for="inputAddress">Email Address</label>
+              <label for="inputAddress">Email Address</label>
               <input type="email" class="form-control" id="E-mail" name="email" placeholder="Enter your email">
             </div>
             <br />
 
             <div class="form-group col-md-5">
-              <label style="font-size:20px" for="Phone">Phone Number</label>
+              <label for="Phone">Phone Number</label>
               <input type="tel" class="form-control" name="phone" id="Phone" placeholder="Enter your Phone Number"
                 maxlength="14" onkeypress="return /[0-9+]/i.test(event.key)" required>
             </div>
@@ -72,7 +69,7 @@
 
           <div class="form-row">
             <div class="form-group col-md-12" style="width:100%">
-              <label style="font-size:20px" for="inputAddress">Business Address</label>
+              <label for="inputAddress">Business Address</label>
               <input type="text" class="form-control" name="address" id="address" placeholder="Enter Address">
             </div>
           </div>
@@ -80,7 +77,7 @@
 
           <div class="form-row">
             <div class="form-group col-md-5 mr-auto">
-              <label style="font-size:20px" for="inputState">State</label>
+              <label for="inputState">State</label>
               <select id="inputState" class="form-control" name="state" onchange="localGovChange(this);" required>
                 <option value="" disabled selected>Please Select a State</option>
                 <option value="Abia">Abia</option>
@@ -126,7 +123,7 @@
 
             <div class="form-group col-md-5">
 
-              <label style="font-size:20px" for="localGovt">Local Govt </label>
+              <label for="localGovt">Local Govt </label>
               <select id="country" name="lgov" class="form-control" required>
                 <option value="" disabled selected>Please Select Your Local Government</option>
               </select>
@@ -137,7 +134,7 @@
 
           <div class="form-row">
             <div class="form-group col-md-5 mr-auto">
-              <label style="font-size:20px" for="agency">Are you currently into Agency Banking ?</label>
+              <label for="agency">Are you currently into Agency Banking ?</label>
               <select id="res" class="form-control" name="agency" onchange="resChange(this);" required>
                 <option value="" disabled selected>Please select an option </option>
                 <option value="yes">Yes</option>
@@ -149,7 +146,7 @@
 
             <div class="form-group col-md-5">
 
-              <label style="font-size:20px" for="platforms">Which of these platforms do you use ? </label>
+              <label for="platforms">Which of these platforms do you use ?</label>
               <select id="rest" name="platform" class="form-control">
                 <option value="" disabled selected></option>
               </select>
@@ -159,7 +156,7 @@
 
           <div class="form-row">
             <div class="form-group col-md-5 mr-auto">
-              <label style="font-size:20px" for="gender">How did you hear about us?</label>
+              <label for="gender">How did you hear about us?</label>
               <select name="advert" id="advert" name="advert" class="form-control" onchange="showfield(this.options[this.selectedIndex].value)">
                 <option value="" disabled selected>Please Select Source</option>
                 <option value="Referral">Referral</option>
@@ -174,7 +171,7 @@
             </div>
             <br />
 
-            <div id="div1" class="form-group col-md-5" style="font-size:20px">
+            <div id="div1" class="form-group col-md-5">
             </div>
           </div>
           <br />
