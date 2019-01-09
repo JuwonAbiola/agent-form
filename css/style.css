@@ -71,11 +71,12 @@ body {
     .but {
         /* border: none; */
         color: white;
-        padding: 3px 3px;
+        padding: 4px 4px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin: 5px 5px;
+        margin: 15px 15px;
+        font-size: 15px;
         cursor: pointer;
         width: 40%;
         background-color: #007bff;
