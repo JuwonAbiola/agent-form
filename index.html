@@ -31,7 +31,7 @@
     <div class="container">
       <div class="box-panel">
 
-        <form action="/" method="post">
+        <form action="/response.html">
           <div class="form-row">
             <div class="form-group col-md-5 mr-auto">
               <label for="firstName">Full Name</label>
@@ -61,7 +61,7 @@
             <div class="form-group col-md-5">
               <label for="Phone">Phone Number</label>
               <input type="tel" class="form-control" name="phone" id="Phone" placeholder="Enter your Phone Number"
-                maxlength="14" onkeypress="return /[0-9+]/i.test(event.key)" required>
+                maxlength="14" minlength="11" onkeypress="return /[0-9+]/i.test(event.key)" required>
             </div>
           </div>
           <br />
@@ -175,7 +175,7 @@
             </div>
           </div>
           <br />
-          <div class="cen"> <button type="submit" class="but">SUBMIT</button></div>
+          <div class="cen"><button type="submit" class="but">SUBMIT</button></div>
           <br />
       </div>
     </div>
