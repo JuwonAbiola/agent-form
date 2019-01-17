@@ -2207,13 +2207,16 @@
 
 
 
- function showfield(name) {
-     if (name == 'Other') {
-         document.getElementById('div1').innerHTML = 'If Other, Please Specify  <input type="text" name="advert" class="form-control" id="specify" placeholder="Specify Here" />';
-     } else {
-         document.getElementById('div1').innerHTML = '';
-     }
- }
+ //  function showfield(name) {
+ //      if (name == 'Other') {
+ //          document.getElementById('div1').innerHTML = 'If Other, Please Specify  <input type="text" name="advert" class="form-control" id="specify" placeholder="Specify Here" />';
+ //      } else {
+ //          document.getElementById('div1').innerHTML = '';
+ //      }
+ //  }
+
+
+
 
 
 
