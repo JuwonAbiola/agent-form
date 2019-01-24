@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Agent Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootStrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.8.3.js" integrity="sha256-dW19+sSjW7V1Q/Z3KD1saC6NcE5TUIhLJzJbrdKzxKc="
+    crossorigin="anonymous"></script>
+  <script src='https://www.google.com/recaptcha/api.js?render=6LcZzoIUAAAAAAVC4xio4_VYiCdAAzQ2oH3TQGRm'></script>
+
+
+</head>
+<br />
+
+<!-- Just an image -->
+<nav class="navbar navbar-light ">
+  <a class="navbar-brand" href="/index.html">
+    <img src="imglogo.png" alt="PayCentre">
+  </a>
+</nav>
+
+<body>
+  <br />
+  <div class="cen">Kindly Fill This Form And One Of Our Representatives Will Contact You </div> <br />
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="box-panel ">
+
+        <form action="/response.html">
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label for="firstName">Full Name</label>
+              <input type="text" class="form-control" id="Name" name="name" placeholder="Please Enter Your Full Name"
+                onkeypress="return /[a-z ]/i.test(event.key)" required>
+            </div>
+            <br />
+
+            <div class="form-group col-md-5">
+              <label for=" gender">Gender</label>
+              <select id="gender" class="form-control" name="gender" required>
+                <option value="" disabled selected>Please Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label for="inputAddress">Email Address</label>
+              <input type="email" class="form-control" id="E-mail" name="email" placeholder="Enter your email">
+            </div>
+            <br />
+
+            <div class="form-group col-md-5">
+              <label for="Phone">Phone Number</label>
+              <input type="tel" class="form-control" name="phone" id="Phone" placeholder="Enter your Phone Number"
+                maxlength="14" minlength="11" onkeypress="return /[0-9+]/i.test(event.key)" required>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="form-row">
+            <div class="form-group col-md-12" style="width:100%">
+              <label for="inputAddress">Business Address</label>
+              <input type="text" class="form-control" name="address" id="address" placeholder="Enter Address">
+            </div>
+          </div>
+          <br />
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label for="inputState">State</label>
+              <select id="inputState" class="form-control" name="state" onchange="localGovChange(this);" required>
+                <option value="" disabled selected>Please Select a State</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Akwa Ibom">Akwa Ibom</option>
+                <option value="Bauchi">Bauchi</option>
+                <option value="Bayelsa">Bayelsa</option>
+                <option value="Benue">Benue</option>
+                <option value="Borno">Borno</option>
+                <option value="CrossRiver">Cross River</option>
+                <option value="Delta">Delta</option>
+                <option value="Ebonyi">Ebonyi</option>
+                <option value="Enugu">Enugu</option>
+                <option value="Edo">Edo</option>
+                <option value="Ekiti">Ekiti</option>
+                <option value="Gombe">Gombe</option>
+                <option value="Imo">Imo</option>
+                <option value="Jigawa">Jigawa</option>
+                <option value="Kaduna">Kaduna</option>
+                <option value="Kano">Kano</option>
+                <option value="Kastina">Kastina</option>
+                <option value="Kebbi">Kebbi</option>
+                <option value="Kogi">Kogi</option>
+                <option value="Kwara">Kwara</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Nasarawa">Nasarawa</option>
+                <option value="Niger">Niger</option>
+                <option value="Ogun">Ogun</option>
+                <option value="Ondo">Ondo</option>
+                <option value="Osun">Osun</option>
+                <option value="Oyo">Oyo</option>
+                <option value="Plateau">Plateau</option>
+                <option value="Rivers">Rivers</option>
+                <option value="Sokoto">Sokoto</option>
+                <option value="Taraba">Taraba</option>
+                <option value="Yobe">Yobe</option>
+                <option value="Zamfara">Zamfara</option>
+                <option value="Abuja">Abuja</option>
+              </select>
+            </div>
+            <br />
+
+            <div class="form-group col-md-5">
+
+              <label for="localGovt">Local Govt </label>
+              <select id="country" name="lgov" class="form-control" required>
+                <option value="" disabled selected>Please Select Your Local Government</option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label for="agency">Are you currently into Agency Banking ?</label>
+              <select id="res" class="form-control" name="agency" onchange="resChange(this);" required>
+                <option value="" disabled selected>Please select an option </option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+
+              </select>
+            </div>
+            <br />
+
+            <div class="form-group col-md-5">
+
+              <label for="platforms">Which of these platforms do you use ?</label>
+              <select id="rest" name="platform" class="form-control">
+                <option value="" disabled selected></option>
+              </select>
+            </div>
+          </div>
+          <br />
+
+          <div class="form-row">
+            <div class="form-group col-md-5 mr-auto">
+              <label for="gender">How did you hear about us?</label>
+              <select name="advert" id="visit" name="advert" class="form-control">
+                <option value='1' class='volunteer'>Romania</option>
+                <option value='2' class='volunteer1'>Slovakia</option>
+                <option value='3' class='volunteer2'>Belgium</option>
+                <option value='4' class='volunteer3'>Other</option>
+              </select>
+            </div>
+            <br />
+
+            <div id="div1" class="form-group col-md-5">
+            </div>
+          </div>
+          <br />
+          <div class="cen"><button type="submit" class="but">SUBMIT</button></div>
+          <br />
+      </div>
+    </div>
+    </form>
+  </div>
+  <br />
+  <br />
+
+  </div>
+  <script>
+    window.intercomSettings = {
+      app_id: "u4o9lizg"
+    };
+  </script>
+  <script>
+    (function () {
+      var w = window;
+      var ic = w.Intercom;
+      if (typeof ic === "function") {
+        ic('reattach_activator');
+        ic('update', w.intercomSettings);
+      } else {
+        var d = document;
+        var i = function () {
+          i.c(arguments);
+        };
+        i.q = [];
+        i.c = function (args) {
+          i.q.push(args);
+        };
+        w.Intercom = i;
+        var l = function () {
+          var s = d.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'https://widget.intercom.io/widget/kghxsda5';
+          var x = d.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        };
+        if (w.attachEvent) {
+          w.attachEvent('onload', l);
+        } else {
+          w.addEventListener('load', l, false);
+        }
+      }
+    })();
+  </script>
+
+
+</body>
+
+</html>

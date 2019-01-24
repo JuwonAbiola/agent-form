@@ -37,7 +37,7 @@ body {
 .but {
     border: none;
     color: white;
-    padding: 10hpx 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -101,4 +101,11 @@ body {
         text-align: center;
         font-size: 18px;
     }
+}
+
+.fir {
+    height: 20%;
+    min-height: 400px;
+    background-image: linear-gradient(#004080, #0080ff);
+    padding-top: 50px;
 }

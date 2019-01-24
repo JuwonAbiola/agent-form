@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.942 23.942">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #0080ff;
+      }
+
+      .cls-1 {
+        opacity: 0.29;
+      }
+    </style>
+  </defs>
+  <g id="Group_902" data-name="Group 902" transform="translate(-256 -6969)">
+    <rect id="Rectangle_809" data-name="Rectangle 809" class="cls-1" width="23.942" height="23.942" transform="translate(256 6969)"/>
+    <g id="tick" transform="translate(258.262 6974.718)">
+      <g id="Group_896" data-name="Group 896" transform="translate(0 0)">
+        <path id="Path_379" data-name="Path 379" class="cls-2" d="M17.1,68.252a.868.868,0,0,0-1.227,0l-10.4,10.4-4-4A.868.868,0,0,0,.254,75.878l4.609,4.609a.868.868,0,0,0,1.227,0L17.1,69.479A.868.868,0,0,0,17.1,68.252Z" transform="translate(0 -67.997)"/>
+      </g>
+    </g>
+  </g>
+</svg>
