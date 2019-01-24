@@ -1,18 +1,18 @@
 /* @font-face {
     font-family: AnenirNext;
-    src: url(/fonts/AvenirNextLTPro-It.otf);
+    src: url(fonts/AvenirNextLTPro-It.otf);
     font-style: italic;
 
 } */
 
 @font-face {
     font-family: AnenirNext;
-    src: url(/fonts/AvenirNextLTPro-Regular.otf);
+    src: url(fonts/AvenirNextLTPro-Regular.otf);
 }
 
 /* @font-face {
     font-family: AnenirNext;
-    src: url(/fonts/AvenirNextLTPro-Bold.otf);
+    src: url(fonts/AvenirNextLTPro-Bold.otf);
     font-weight: bold;
 } */
 
