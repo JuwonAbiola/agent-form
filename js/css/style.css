@@ -1,0 +1,76 @@
+/*=======================================================================
+[Table of contents]
+=========================================================================
+[1] Header
+[2] Promotion
+[3] Call to action 
+[4] What we do
+[5] Video Section 
+[6] Contact section 
+[7] Testmonial 
+[8] Instra  
+[9] Footer   
+[10] subscription   
+[11] Preloader   
+
+==========================================================================*/
+
+/**Header**/
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 21px 0;
+}
+
+.header.fixedHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.header.fixedHeader .logo {
+    display: none;
+}
+
+.header.fixedHeader .logo2 {
+    display: block !important;
+}
+
+.header.fixedHeader .mainNav ul li a {
+    color: #000;
+}
+
+.mainNav {}
+
+.mainNav ul {}
+
+.mainNav ul li {
+    display: inline-block;
+    margin-left: 32px;
+}
+
+.mainNav ul li a {
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: .8;
+    font-size: 14px;
+}
+
+.mainNav ul li.active a {
+    color: #007bff !important;
+}
+
+.mainNav ul li a:hover {
+    color: #007bff !important;
+}

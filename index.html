@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
     <script src="js/jQuery.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -36,25 +38,28 @@
                     </div>
                 </div>
                 <div class="col-lg-10 col-sm-9 text-right">
-                    <nav class="mainNav">
-                        <div class="mobileMenu hidden-lg hidden-md hidden-sm">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <ul>
-                            <ul class="ave c">
-                                <li class="scroll"><a href="/faq.html">FAQs</a></li>
-                                <li class="scroll"><a href="/signup.html">AGENT SIGN UP</a></li>
-                                <li class="scroll nav-link btn btn-lg btn-primary"><a style="color:#fff" href="#">SIGN
+                    <nav class="navbar navbar-expand-lg navbar-light mainNav ">
+                        <a class="navbar-brand" href="#">PayCentre</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="ave c navbar-nav ml-auto">
+                                <li class="scroll "><a class="btn-lg " href="/faq.html">FAQs</a></li>
+                                <li class="scroll"><a class="btn-lg" href="/signup.html">AGENT SIGN UP</a></li>
+                                <li class="scroll"><a class="btn-lg btn-primary" style="color:#fff" href="#">SIGN
                                         IN</a></li>
                             </ul>
+                        </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
     <!-- /.navbar -->
+
+
 
     <section class="first">
         <div class="container-fluid">
@@ -69,7 +74,7 @@
                         creating jobs
                         through our agent network.</p>
 
-                    <a href="/signup.html" class="nav-link "> <button type="button" class="btn btn-lg ave" style="background-color:#12054c; color: #fff;">SIGN
+                    <a href="/signup.html" class=" "> <button type="button" class="btn btn-lg ave" style="background-color:#12054c; color: #fff;">SIGN
                             UP</button>
                     </a>
                 </div>
@@ -133,6 +138,7 @@
             </div>
         </div>
     </section>
+
     <section class="white lpad rpad sec  pad box">
         <div class="container-fluid  ">
             <div class="row pad">
@@ -173,7 +179,7 @@
                                 width="20"></div>
                     </div>
                     <br />
-                    <a href="/signup.html" class="nav-link "> <button type="button" class="btn btn-lg ave" style="background-color:#12054c; color: #fff;">SIGN
+                    <a href="/signup.html" class=" "> <button type="button" class="btn btn-lg ave" style="background-color:#12054c; color: #fff;">SIGN
                             UP</button>
                     </a>
                     <br />
@@ -259,6 +265,7 @@
 
                 </div>
                 <div class="col">
+                    <img src="assets/1 (1a).png" alt="Smiley face" height="90%" width="100%">
                 </div>
             </div>
         </div>
@@ -367,7 +374,7 @@
                     Magnam temporibus error ex!</p>
             </div>
         </div>
-        <a href="/faq.html" class="nav-link"> <button type="button" class="btn btn-lg pop" style="background-color:#12054c; color: #fff;">See
+        <a href="/faq.html" class=""> <button type="button" class="btn btn-lg pop" style="background-color:#12054c; color: #fff;">See
                 more Answers</button>
         </a>
         </div>
@@ -379,7 +386,7 @@
             <br />
             <p> be part of our success story</p>
             <br />
-            <a href="/signup.html" class="nav-link "> <button type="button" class="btn btn-lg pop" style="background-color:#0080ff; color: #fff;">Get
+            <a href="/signup.html" class=" "> <button type="button" class="btn btn-lg pop" style="background-color:#0080ff; color: #fff;">Get
                     Started</button>
             </a>
         </div>
@@ -393,8 +400,15 @@
             }
         });
     </script>
-
-
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() > 40) {
+                $("header").addClass('.header.fixedHeader .logo2');
+            } else {
+                $("header").removeClass('.header.fixedHeader .logo2');
+            }
+        });
+    </script>
 </body>
 
 </html>
