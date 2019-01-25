@@ -4895,7 +4895,8 @@ input[type=submit].btn-block {
 }
 
 .card-img-top {
-    width: 100%;
+    width: 30%;
+    align-self: center;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px)
 }
