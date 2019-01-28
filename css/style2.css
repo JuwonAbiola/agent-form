@@ -46,7 +46,7 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: extra-bold;
+    font-weight: 900;
     font-size: 26px;
 }
 
@@ -255,6 +255,16 @@ ul.timeline>li:before {
     z-index: 99;
 }
 
+.header .logo2 {
+    display: none;
+
+}
+
+.header.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+
 .header.fixedHeader .logo {
     display: none;
 }
@@ -277,11 +287,8 @@ ul.timeline>li:before {
 }
 
 .mainNav ul li a {
-    font-weight: 700;
     color: #fff;
-    display: block;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 20;
     line-height: .5;
     font-size: 17px;
 }

@@ -44,9 +44,9 @@
 }
 
 @media(min-width:320px) and (max-width:767px) {
-    img {
+    /* img {
         display: none;
-    }
+    } */
 
     .mobileMenu {
         width: 25px;
