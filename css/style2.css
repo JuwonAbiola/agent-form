@@ -59,7 +59,7 @@ h1 {
     position: relative;
     overflow: hidden;
     height: 100%;
-    padding-top: 90px;
+    padding: 5%;
     background-color: #f1f2f6;
 
 }
