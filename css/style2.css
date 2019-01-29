@@ -46,7 +46,7 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 26px;
 }
 
@@ -122,8 +122,8 @@ nav .navbar-brand {
 section {
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .left {
@@ -264,7 +264,6 @@ ul.timeline>li:before {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
-
 .header.fixedHeader .logo {
     display: none;
 }
@@ -288,9 +287,8 @@ ul.timeline>li:before {
 
 .mainNav ul li a {
     color: #fff;
-    font-weight: 20;
     line-height: .5;
-    font-size: 17px;
+    /* font-size: 17px; */
 }
 
 .mainNav ul li.active a {
@@ -307,4 +305,20 @@ ul.timeline>li:before {
 
 .rpad {
     padding-right: 50px;
+}
+
+.t {
+    padding-bottom: 3.25rem;
+}
+
+.vc {
+    vertical-align: middle;
+}
+
+.bo {
+    font-weight: bold;
+}
+
+.lmar {
+    margin-left: 50px
 }

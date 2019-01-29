@@ -3269,10 +3269,10 @@ fieldset:disabled a.btn {
 
 .btn-group-lg>.btn,
 .btn-lg {
-    padding: .5rem 1rem;
-    font-size: 1.25rem;
+    padding: 1rem 3.5rem;
+    /* font-size: 1.25rem; */
     line-height: 1.5;
-    border-radius: .3rem
+    border-radius: .5rem
 }
 
 .btn-group-sm>.btn,
