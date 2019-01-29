@@ -28,8 +28,14 @@
     margin-left: 0px;
 }
 
-.pad {
+.pad,
+.col-6 {
     padding-top: 50px;
+}
+
+.rpadd {
+    padding-right: 164px !important;
+
 }
 
 html,
@@ -320,5 +326,5 @@ ul.timeline>li:before {
 }
 
 .lmar {
-    margin-left: 50px
+    margin-left: 50px;
 }
