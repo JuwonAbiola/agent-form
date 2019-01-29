@@ -57,11 +57,15 @@ h1 {
 
 .first {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     padding-top: 90px;
     background-image: linear-gradient(#004080, #0080ff);
 
+}
+
+.vc {
+    margin: auto;
 }
 
 /* .first::before {
@@ -310,8 +314,6 @@ ul.timeline>li:before {
 .t {
     padding-bottom: 3.25rem;
 }
-
-.vc {}
 
 .bo {
     font-weight: bold;
