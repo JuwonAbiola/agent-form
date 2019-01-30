@@ -326,6 +326,10 @@ ul.timeline>li:before {
     padding-right: 50px;
 }
 
+.nrpad {
+    padding-right: 0px !important;
+}
+
 .rpad1 {
     padding-right: 20px;
 }
