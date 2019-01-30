@@ -1,0 +1,330 @@
+
+  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration: none;
+  font-family: AnenirNext;}
+  
+  
+
+  
+  
+@font-face {
+  font-family: AnenirNext;
+  src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+
+      
+
+body{
+    font-size: 20px -18.5rem;
+    line-height: 17px;
+    margin: 0;
+    padding:0;
+   
+  }
+  /* global */
+
+  
+  p{
+    line-height: 40px;
+    color: #262626;
+     font-family: AnenirNext;
+    font-size: 30px;
+  }
+  
+  a {
+      text-decoration: none;
+      
+  }
+  
+  .background{
+    background-image: url(../img/abstract-art-blue-616650@3x.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+   
+  }
+  .header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 15px 0;
+}
+
+.header.fixedHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.header.fixedHeader .logo {
+    display: none;
+}
+
+.header.fixedHeader .logo2 {
+    display: block !important;
+}
+
+.header.fixedHeader .mainNav ul li a {
+    color: #000;
+}
+
+.mainNav {}
+
+.mainNav ul {}
+
+.mainNav ul li {
+    display: inline-block;
+    margin-left: 32px;
+}
+
+.mainNav ul li a {
+    font-weight: 700;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: .5;
+    font-size: 17px;
+}
+
+.mainNav ul li.active a {
+    color: #007bff !important;
+}
+
+.mainNav ul li a:hover {
+    color: #007bff !important;
+}
+
+  
+ 
+#showcase{
+    background-color: #004080;
+    min-height: 300px;
+    
+}
+
+#showcase h1{
+    padding-top: 50px;
+    margin-top:50px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  
+}
+
+#faq-questions{
+  background-color: #fff;
+  max-height: 220%;
+  top: -90px;
+  position: relative;
+  box-shadow:  inset 0 0 10px #ccc;
+  
+}
+
+
+
+.cd-faq {
+  width: 90%;
+  max-width: 1024px;
+  margin: 2em auto;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+.cd-faq:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (min-width: 768px) {
+  .cd-faq {
+    position: relative;
+    margin: 4em auto;
+    box-shadow: none;
+  }
+}
+
+.cd-faq-group {
+  /* hide group not selected */
+  display: block;
+}
+.cd-faq-group.selected {
+  display: block;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .cd-faq-group {
+    /* all groups visible */
+    display: block;
+  }
+  .cd-faq-group > li {
+    background: #ffffff;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+    text-decoration: none;
+  }
+  .cd-faq-group > li  a{text-decoration: none;}
+  /* .no-touch .cd-faq-group > li:hover {
+    box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
+  } */
+  
+}
+
+.cd-faq-trigger {
+  position: relative;
+  display: block;
+  margin: 1.6em 0 .4em;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  
+}
+.cd-faq-content p {
+  font-size: 20px;
+  font-family: AnenirNext;
+  
+}
+@media only screen and (min-width: 768px) {
+  .cd-faq-trigger {
+    font-size: 24px;
+    display: inline-block;
+    font-size: 1.07rem;
+    font-weight: bold;
+    margin: 0;
+    color: #12054C !important;
+    padding: 18px 72px 21px 31px;
+  }
+
+ 
+}
+
+.cd-faq-content p {
+  font-size: 20px;
+  font-family: AnenirNext;
+  line-height: 1.4;
+  color: #0b3259;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-faq-content {
+    display: none;
+    padding: 0 24px 30px;
+  }
+  .cd-faq-content p {
+    line-height: 1.6;
+  }
+  
+}
+
+
+
+
+
+.fa {
+  transition: transform .2s;
+  padding: 10px;
+}
+
+.fa.active {
+  transform: rotateZ(-90deg);
+}
+
+
+
+
+
+
+  
+  /* Samsung Galaxy S4 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+
+  .cd-faq-trigger {
+    font-size: 24px;
+    display: inline-block;
+    font-size: 1.07rem;
+    font-weight: bold;
+    margin: 0;
+    color: #12054C !important;
+    padding: 18px 72px 21px 31px;
+  }
+
+ 
+
+
+.cd-faq-content p {
+  font-size: 20px;
+  font-family: AnenirNext;
+  line-height: 1.4;
+  color: #0b3259;
+}
+
+  .cd-faq-content {
+    display: none;
+    padding: 0 24px 30px;
+  }
+  .cd-faq-content p {
+    line-height: 1.6;
+  }
+ 
+}
+
+  
