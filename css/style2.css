@@ -33,7 +33,14 @@
 }
 
 .rpadd {
-    padding-right: 164px !important;
+
+    max-width: 450px;
+    /* or whatever width you want. */
+    display: inline-block;
+}
+
+.lpadd {
+    padding-left: 250px;
 
 }
 
@@ -59,7 +66,7 @@ h1 {
     position: relative;
     overflow: hidden;
     height: 100%;
-    padding: 5%;
+    padding-top: 5%;
     background-color: #f1f2f6;
 
 }
@@ -126,7 +133,7 @@ nav .navbar-brand {
 
 section {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -235,6 +242,13 @@ ul.timeline>li:before {
     font-size: 20px;
 }
 
+.b1 {
+
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
 .c {
     font-size: 24px;
 }
@@ -312,12 +326,16 @@ ul.timeline>li:before {
     padding-right: 50px;
 }
 
+.rpad1 {
+    padding-right: 20px;
+}
+
 .t {
     padding-bottom: 3.25rem;
 }
 
 .vc {
-    margin: auto;
+    margin: auto 0;
 }
 
 .bo {
@@ -325,5 +343,28 @@ ul.timeline>li:before {
 }
 
 .lmar {
-    margin-left: 50px;
+    margin-left: 60px;
+}
+
+.lip {
+    width: 170px;
+    /* or whatever width you want. */
+    max-width: 170px;
+    /* or whatever width you want. */
+    display: inline-block;
+}
+
+.transparent {
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+
+.r {
+    border-radius: 15px !important;
+}
+
+.r1 {
+    border-radius: 10px !important;
+    /* width: 18rem !important; */
+
 }
