@@ -372,3 +372,32 @@ ul.timeline>li:before {
     /* width: 18rem !important; */
 
 }
+
+.bounceimg {
+    -webkit-animation: bounceimg 1s ease-in-out 0s infinite alternate;
+    animation: bounceimg 1s ease-in-out 0s infinite alternate;
+}
+
+@-webkit-keyframes bounceimg {
+    from {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bounceimg {
+    from {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    to {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
