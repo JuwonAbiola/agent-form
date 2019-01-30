@@ -10,11 +10,11 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-+ function($) {
++ function ($) {
     'use strict';
     // AFFIX CLASS DEFINITION
     // ======================
-    var Affix = function(element, options) {
+    var Affix = function (element, options) {
         this.options = $.extend({}, Affix.DEFAULTS, options)
         this.$target = $(this.options.target)
             .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
@@ -31,7 +31,7 @@
         offset: 0,
         target: window
     }
-    Affix.prototype.getState = function(scrollHeight, height, offsetTop, offsetBottom) {
+    Affix.prototype.getState = function (scrollHeight, height, offsetTop, offsetBottom) {
         var scrollTop = this.$target.scrollTop()
         var position = this.$element.offset()
         var targetHeight = this.$target.height()
@@ -47,17 +47,17 @@
         if (offsetBottom != null && (colliderTop + colliderHeight >= scrollHeight - offsetBottom)) return 'bottom'
         return false
     }
-    Affix.prototype.getPinnedOffset = function() {
+    Affix.prototype.getPinnedOffset = function () {
         if (this.pinnedOffset) return this.pinnedOffset
         this.$element.removeClass(Affix.RESET).addClass('affix')
         var scrollTop = this.$target.scrollTop()
         var position = this.$element.offset()
         return (this.pinnedOffset = position.top - scrollTop)
     }
-    Affix.prototype.checkPositionWithEventLoop = function() {
+    Affix.prototype.checkPositionWithEventLoop = function () {
         setTimeout($.proxy(this.checkPosition, this), 1)
     }
-    Affix.prototype.checkPosition = function() {
+    Affix.prototype.checkPosition = function () {
         if (!this.$element.is(':visible')) return
         var height = this.$element.height()
         var offset = this.options.offset
@@ -90,7 +90,7 @@
     // AFFIX PLUGIN DEFINITION
     // =======================
     function Plugin(option) {
-        return this.each(function() {
+        return this.each(function () {
             var $this = $(this)
             var data = $this.data('bs.affix')
             var options = typeof option == 'object' && option
@@ -103,14 +103,14 @@
     $.fn.affix.Constructor = Affix
     // AFFIX NO CONFLICT
     // =================
-    $.fn.affix.noConflict = function() {
+    $.fn.affix.noConflict = function () {
         $.fn.affix = old
         return this
     }
     // AFFIX DATA-API
     // ==============
-    $(window).on('load', function() {
-        $('[data-spy="affix"]').each(function() {
+    $(window).on('load', function () {
+        $('[data-spy="affix"]').each(function () {
             var $spy = $(this)
             var data = $spy.data()
             data.offset = data.offset || {}
@@ -122,21 +122,20 @@
 }(jQuery);
 
 
-$(document).ready(function() {
-    $(this).on("click", ".cd-faq-trigger", function() {
-      $(this).parent().find(".cd-faq-content").toggle();
-      $(this).find(".fa").toggleClass('active');
-    });
-  });
-
-  $(function() {
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 50) {
-            $(".navbar").addClass("active");
-        } else {
-            //remove the background property so it comes transparent again (defined in your css)
-           $(".navbar").removeClass("active");
-        }
+$(document).ready(function () {
+    $(this).on("click", ".cd-faq-trigger", function () {
+        $(this).parent().find(".cd-faq-content").toggle();
+        $(this).find(".fa").toggleClass('active');
     });
 });
 
+$(function () {
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+            $(".navbar").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+            $(".navbar").removeClass("active");
+        }
+    });
+});
