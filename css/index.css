@@ -397,6 +397,14 @@ a {
   transform: rotateZ(-90deg);
 }
 
+.push-fa {
+  width: 940px;
+  /* or whatever width you want. */
+  max-width: 1000px;
+  /* or whatever width you want. */
+  display: inline-block;
+}
+
 
 
 
