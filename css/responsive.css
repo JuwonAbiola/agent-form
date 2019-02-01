@@ -78,6 +78,12 @@
         max-width: 100%
     }
 
+    .col {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
     .col-4 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -94,7 +100,7 @@
 
     section {
         padding-top: 5px;
-        padding-bottom: 5px;
+        padding-bottom: 25px;
         padding-left: 5px;
         padding-right: 5px;
     }
