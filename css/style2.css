@@ -353,8 +353,6 @@ ul.timeline>li:before {
 .lip {
     width: 170px;
     /* or whatever width you want. */
-    max-width: 170px;
-    /* or whatever width you want. */
     display: inline-block;
 }
 

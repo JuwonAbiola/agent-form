@@ -47,14 +47,57 @@
 }
 
 @media(min-width:320px) and (max-width:767px) {
-    .w5 {
-        display: none;
+    .first {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        padding-top: 25%;
+        background-color: #f1f2f6;
+
     }
 
+    .vc {
+        margin: auto 5;
+    }
 
-    /* img {
+    .pad {
+        padding-top: 20px;
+    }
+
+    .lmar {
+        margin-left: 0px;
+    }
+
+    .col-8 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    .col-4 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+
+    .lpad {
+        padding-left: 0px;
+    }
+
+    .rpad {
+        padding-right: 0px;
+    }
+
+    section {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #img {
         display: none;
-    } */
+    }
 
     .mobileMenu {
         width: 25px;
@@ -208,7 +251,7 @@
     }
 
     .footer {
-        padding: 80px 0;
+        padding: 20px 0;
     }
 
     .logo2.footerlo {
