@@ -135,28 +135,19 @@ a {
   font-family: AnenirNext;
 }
 
-
-
-
-
 @font-face {
   font-family: AnenirNext;
   src: url(fonts/AvenirNextLTPro-Regular.otf);
 }
-
-
 
 body {
   font-size: 20px -18.5rem;
   line-height: 17px;
   margin: 0;
   padding: 0;
-
 }
 
 /* global */
-
-
 p {
   line-height: 40px;
   color: #262626;
@@ -166,7 +157,6 @@ p {
 
 a {
   text-decoration: none;
-
 }
 
 .background {
@@ -177,7 +167,6 @@ a {
   top: 0;
   bottom: 0;
   height: 100vh;
-
 }
 
 /**Header**/
@@ -203,7 +192,6 @@ a {
 
 .header .logo2 {
   display: none;
-
 }
 
 .header.navbar-light .navbar-toggler-icon {
@@ -245,12 +233,9 @@ a {
   color: #007bff !important;
 }
 
-
-
 #showcase {
   background-image: linear-gradient(#004080, #12054c);
   min-height: 300px;
-
 }
 
 #showcase h1 {
@@ -260,7 +245,6 @@ a {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
-
 }
 
 #faq-questions {
@@ -269,18 +253,13 @@ a {
   top: -90px;
   position: relative;
   box-shadow: inset 0 0 10px #ccc;
-
 }
-
-
 
 .cd-faq {
   width: 90%;
   max-width: 1024px;
   margin: 2em auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-
-
 }
 
 .cd-faq:after {
@@ -306,7 +285,6 @@ a {
   display: block;
 }
 
-
 @media only screen and (min-width: 768px) {
   .cd-faq-group {
     /* all groups visible */
@@ -330,7 +308,6 @@ a {
   /* .no-touch .cd-faq-group > li:hover {
     box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
   } */
-
 }
 
 .cd-faq-trigger {
@@ -340,13 +317,11 @@ a {
   line-height: 1.2;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-
 }
 
 .cd-faq-content p {
   font-size: 20px;
   font-family: AnenirNext;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -359,8 +334,6 @@ a {
     color: #12054C !important;
     padding: 18px 72px 21px 31px;
   }
-
-
 }
 
 .cd-faq-content p {
@@ -379,12 +352,7 @@ a {
   .cd-faq-content p {
     line-height: 1.6;
   }
-
 }
-
-
-
-
 
 .fa {
   transition: transform .2s;
@@ -405,43 +373,108 @@ a {
   display: inline-block;
 }
 
-
-
-
-
-
-
 /* Samsung Galaxy S4 ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
-  /* Styles */
-
-  .cd-faq-trigger {
-    font-size: 24px;
+@media (max-width: 575.98px) {
+  .push-fa {
+    width: 940px;
+    /* or whatever width you want. */
+    max-width: 1000px;
+    /* or whatever width you want. */
     display: inline-block;
-    font-size: 1.07rem;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  .push-fa {
+    width: 100px;
+    /* or whatever width you want. */
+    max-width: 100px;
+    /* or whatever width you want. */
+    display: inline-block;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .push-fa {
+    width: 100px;
+    /* or whatever width you want. */
+    max-width: 100px;
+    /* or whatever width you want. */
+    display: inline-block;
+  }
+
+  .fa {
+    transition: transform .2s;
+    padding: 10px;
+    transform: rotateZ(90deg);
+    float: right
+  }
+
+  .fa.active {
+    transform: rotateZ(-90deg);
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+  .push-fa {
+    width: 600px;
+    /* or whatever width you want. */
+    max-width: 273px;
+    /* or whatever width you want. */
+    display: inline-block;
+  }
+
+  .fa {
+    transition: transform .2s;
+    padding: 10px;
+    transform: rotateZ(90deg);
+    float: right
+  }
+
+  .fa.active {
+    transform: rotateZ(-90deg);
+  }
+
+
+  #showcase {
+    background-image: linear-gradient(#004080, #12054c);
+    min-height: 300px;
+  }
+
+  #showcase h1 {
+    padding-top: 50px;
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    margin: 0;
-    color: #12054C !important;
-    padding: 18px 72px 21px 31px;
+    font-size: 24px;
   }
 
-
-
-
-  .cd-faq-content p {
-    font-size: 20px;
-    font-family: AnenirNext;
-    line-height: 1.4;
-    color: #0b3259;
+  #faq-questions {
+    background-color: #fff;
+    max-height: 220%;
+    top: -90px;
+    position: relative;
+    box-shadow: inset 0 0 10px #ccc;
   }
 
-  .cd-faq-content {
+  .cd-faq {
+    width: 90%;
+    max-width: 1024px;
+    margin: 2em auto;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .cd-faq:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #showcase br {
     display: none;
-    padding: 0 24px 30px;
   }
-
-  .cd-faq-content p {
-    line-height: 1.6;
-  }
-
 }
