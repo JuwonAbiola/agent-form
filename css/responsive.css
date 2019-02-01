@@ -1,4 +1,7 @@
 @media(min-width:768px) and (max-width:990px) {
+    .w5 {
+        width: 50px;
+    }
 
 
     .mainNav ul li {
@@ -44,6 +47,11 @@
 }
 
 @media(min-width:320px) and (max-width:767px) {
+    .w5 {
+        display: none;
+    }
+
+
     /* img {
         display: none;
     } */

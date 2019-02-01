@@ -454,7 +454,11 @@ ul.timeline>li:before {
 /**
  * ----------------------------------------
  * animation bounce-in-top
- * ----------------------------------------
+ * ---------------
+ 
+ 
+ 
+ -------------------------
  */
 @-webkit-keyframes bounce-in-top {
     0% {
@@ -575,3 +579,21 @@ ul.timeline>li:before {
         animation-timing-function: ease-out;
     }
 }
+
+
+h5 a {
+    color: #212529 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: extra-bold;
+}
+
+h5 a:hover {
+    color: #007bff !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: extra-bold;
+    text-decoration: none;
+}
+
+/* .w5 {
+    width: 550px;
+} */
