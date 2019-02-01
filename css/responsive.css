@@ -47,11 +47,15 @@
 }
 
 @media(min-width:320px) and (max-width:767px) {
+    .tp {
+        padding-top: 10px;
+    }
+
     .first {
         position: relative;
         overflow: hidden;
         height: 100%;
-        padding-top: 25%;
+        padding-top: 22%;
         background-color: #f1f2f6;
 
     }

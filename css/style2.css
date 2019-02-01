@@ -147,6 +147,7 @@ section {
     align-items: center;
 }
 
+
 .white {
     background-color: #fff;
 }
@@ -592,6 +593,6 @@ h5 a:hover {
     text-decoration: none;
 }
 
-/* .w5 {
-    width: 550px;
-} */
+.tp {
+    padding-top: 20px;
+}
