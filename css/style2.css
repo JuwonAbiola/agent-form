@@ -340,7 +340,10 @@ ul.timeline>li:before {
 }
 
 .vc {
-    margin: auto 0;
+    overflow: auto;
+    margin: auto;
+    position: relative;
+
 }
 
 .bo {
