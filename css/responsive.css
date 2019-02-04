@@ -27,6 +27,32 @@
      }
  }
 
+ @media(min-width:320px) and (max-width:414px) {
+
+     .h1,
+     h1 {
+         font-size: 2.0rem !important;
+     }
+
+     .c {
+         font-size: 25px;
+     }
+
+     .h3,
+     h3 {
+         font-size: 1.7rem;
+     }
+ }
+
+ .tpad1 {
+     padding-top: 30px;
+ }
+
+ .tp {
+     padding-top: 10px;
+ }
+ }
+
  @media(min-width:768px) and (max-width:990px) {
      .w5 {
          width: 50px;
@@ -77,282 +103,267 @@
 
  @media(min-width:320px) and (max-width:990px) {
 
-     .h1,
-     h1 {
-         font-size: 2.0rem !important;
+     .tpad1 {
+         padding-top: 30px;
      }
 
-     .c {
-         font-size: 25px;
+     .tp {
+         padding-top: 10px;
      }
 
-     .h3,
-     h3 {
-         font-size: 1.7rem;
+     .first {
+         position: relative;
+         overflow: hidden;
+         height: 100%;
+         padding-top: 22%;
+         background-color: #f1f2f6;
+
      }
- }
 
- .tpad1 {
-     padding-top: 30px;
- }
+     .vc {
+         margin: auto 5;
+     }
 
- .tp {
-     padding-top: 10px;
- }
+     .pad {
+         padding-top: 20px;
+     }
 
- .first {
-     position: relative;
-     overflow: hidden;
-     height: 100%;
-     padding-top: 22%;
-     background-color: #f1f2f6;
+     .lmar {
+         margin-left: 0px;
+     }
 
- }
+     .col-8 {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%
+     }
 
- .vc {
-     margin: auto 5;
- }
+     .col {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%
+     }
 
- .pad {
-     padding-top: 20px;
- }
+     .col-4 {
+         -ms-flex: 0 0 100%;
+         flex: 0 0 100%;
+         max-width: 100%
+     }
 
- .lmar {
-     margin-left: 0px;
- }
+     .lpad {
+         padding-left: 0px;
+     }
 
- .col-8 {
-     -ms-flex: 0 0 100%;
-     flex: 0 0 100%;
-     max-width: 100%
- }
+     .rpad {
+         padding-right: 0px;
+     }
 
- .col {
-     -ms-flex: 0 0 100%;
-     flex: 0 0 100%;
-     max-width: 100%
- }
+     section {
+         padding-top: 5px;
+         padding-bottom: 25px;
+         padding-left: 5px;
+         padding-right: 5px;
+     }
 
- .col-4 {
-     -ms-flex: 0 0 100%;
-     flex: 0 0 100%;
-     max-width: 100%
- }
+     #img {
+         display: none;
+     }
 
- .lpad {
-     padding-left: 0px;
- }
+     .mobileMenu {
+         width: 25px;
+         height: 20px;
+         line-height: .2;
+         position: absolute;
+         right: 15px;
+         top: -28px;
+         cursor: pointer;
+     }
 
- .rpad {
-     padding-right: 0px;
- }
+     .mobileMenu span {
+         width: 100%;
+         height: 2px;
+         background: #fff;
+         display: inline-block;
+     }
 
- section {
-     padding-top: 5px;
-     padding-bottom: 25px;
-     padding-left: 5px;
-     padding-right: 5px;
- }
+     .fixedHeader .mobileMenu span {
+         background: #000;
+     }
 
- #img {
-     display: none;
- }
+     .mainNav ul {
+         background: #fff;
+         /* display: none; */
+         left: 0;
+         margin: auto;
+         padding-top: 5px;
+         position: relative;
+         text-align: right;
+         width: 100%;
+     }
 
- .mobileMenu {
-     width: 25px;
-     height: 20px;
-     line-height: .2;
-     position: absolute;
-     right: 15px;
-     top: -28px;
-     cursor: pointer;
- }
+     .mainNav ul li {
+         display: block;
+         margin-left: 0;
+     }
 
- .mobileMenu span {
-     width: 100%;
-     height: 2px;
-     background: #fff;
-     display: inline-block;
- }
+     .mainNav ul li a {
+         display: block;
+         margin: 10px 0;
+         color: #333
+     }
 
- .fixedHeader .mobileMenu span {
-     background: #000;
- }
+     .bannerCont h1 {
+         font-size: 85px;
+         margin-top: 30px;
+     }
 
- .mainNav ul {
-     background: #fff;
-     /* display: none; */
-     left: 0;
-     margin: auto;
-     padding-top: 5px;
-     position: relative;
-     text-align: right;
-     width: 100%;
- }
+     .bannerCont p {
+         line-height: 40px;
+     }
 
- .mainNav ul li {
-     display: block;
-     margin-left: 0;
- }
+     .travelBtn {
+         padding: 17px 20px;
+     }
 
- .mainNav ul li a {
-     display: block;
-     margin: 10px 0;
-     color: #333
- }
+     .wedocont {
+         padding: 50px 0;
+     }
 
- .bannerCont h1 {
-     font-size: 85px;
-     margin-top: 30px;
- }
+     .wedocont.one::after {
+         border-color: transparent transparent #fff;
+         border-style: solid;
+         border-width: 0 12px 13px;
+         content: "";
+         height: 0;
+         left: 0;
+         margin: auto;
+         position: absolute;
+         right: 0;
+         top: -13px;
+         width: 0;
+     }
 
- .bannerCont p {
-     line-height: 40px;
- }
+     .wedocont.two::after {
+         border-color: transparent transparent #fff;
+         border-style: solid;
+         border-width: 0 12px 13px;
+         content: "";
+         height: 0;
+         left: 0;
+         margin: auto;
+         position: absolute;
+         right: 0;
+         top: -12px;
+         width: 0;
+         z-index: 1;
+         transform: rotate(0deg);
+     }
 
- .travelBtn {
-     padding: 17px 20px;
- }
+     #todo {
+         overflow: hidden;
+     }
 
- .wedocont {
-     padding: 50px 0;
- }
+     .calltoActCont p {
+         margin-bottom: 32px;
+         margin-left: 0;
+     }
 
- .wedocont.one::after {
-     border-color: transparent transparent #fff;
-     border-style: solid;
-     border-width: 0 12px 13px;
-     content: "";
-     height: 0;
-     left: 0;
-     margin: auto;
-     position: absolute;
-     right: 0;
-     top: -13px;
-     width: 0;
- }
+     .calltoActCont h2 {
+         font-size: 120px;
+     }
 
- .wedocont.two::after {
-     border-color: transparent transparent #fff;
-     border-style: solid;
-     border-width: 0 12px 13px;
-     content: "";
-     height: 0;
-     left: 0;
-     margin: auto;
-     position: absolute;
-     right: 0;
-     top: -12px;
-     width: 0;
-     z-index: 1;
-     transform: rotate(0deg);
- }
+     .vidContent h2 {
+         font-size: 0px;
+     }
 
- #todo {
-     overflow: hidden;
- }
+     .videoSection {
+         height: 0px;
+     }
 
- .calltoActCont p {
-     margin-bottom: 32px;
-     margin-left: 0;
- }
+     .conttopRight {
+         bottom: 0;
+         left: 0;
+         margin-bottom: 50px;
+     }
 
- .calltoActCont h2 {
-     font-size: 120px;
- }
+     .paddingRight {
+         padding-right: 0;
+     }
 
- .vidContent h2 {
-     font-size: 0px;
- }
+     .contactForm {
+         margin-left: 15px;
+         padding: 20px;
+         margin-top: 40px;
+     }
 
- .videoSection {
-     height: 0px;
- }
+     .contactForm::after {
+         width: 50%;
+     }
 
- .conttopRight {
-     bottom: 0;
-     left: 0;
-     margin-bottom: 50px;
- }
+     .contFormBott {
+         padding-left: 0;
+     }
 
- .paddingRight {
-     padding-right: 0;
- }
+     .topTitle h3 {
+         line-height: 24px;
+     }
 
- .contactForm {
-     margin-left: 15px;
-     padding: 20px;
-     margin-top: 40px;
- }
+     .singleConForm {
+         padding-left: 95px;
+     }
 
- .contactForm::after {
-     width: 50%;
- }
+     .singleTest {
+         padding: 0;
+     }
 
- .contFormBott {
-     padding-left: 0;
- }
+     #instRow {
+         padding: 0 25px;
+     }
 
- .topTitle h3 {
-     line-height: 24px;
- }
+     .footer {
+         padding: 20px 0;
+     }
 
- .singleConForm {
-     padding-left: 95px;
- }
+     .logo2.footerlo {
+         margin-bottom: 30px;
+     }
 
- .singleTest {
-     padding: 0;
- }
+     .socialfooter {
+         margin-top: 30px;
+         margin-left: 15px;
+     }
 
- #instRow {
-     padding: 0 25px;
- }
+     .copyPera {
+         margin-left: 15px;
+     }
 
- .footer {
-     padding: 20px 0;
- }
+     .contactSec {
+         overflow: hidden;
+     }
 
- .logo2.footerlo {
-     margin-bottom: 30px;
- }
+     .subsForm input {
+         width: 100%;
+         margin-bottom: 10px;
+     }
 
- .socialfooter {
-     margin-top: 30px;
-     margin-left: 15px;
- }
+     .subsNotice p,
+     .consNotice p {
+         font-family: "Merriweather", serif;
+         font-size: 24px;
+         padding: 0 20px;
+         width: 100%;
+     }
 
- .copyPera {
-     margin-left: 15px;
- }
+     .subsForm {
+         width: 100%;
+     }
 
- .contactSec {
-     overflow: hidden;
- }
+     .subsForm input {
+         padding: 15px 30px;
+     }
 
- .subsForm input {
-     width: 100%;
-     margin-bottom: 10px;
- }
-
- .subsNotice p,
- .consNotice p {
-     font-family: "Merriweather", serif;
-     font-size: 24px;
-     padding: 0 20px;
-     width: 100%;
- }
-
- .subsForm {
-     width: 100%;
- }
-
- .subsForm input {
-     padding: 15px 30px;
- }
-
- .subsForm button {
-     position: relative;
- }
+     .subsForm button {
+         position: relative;
+     }
 
  }
